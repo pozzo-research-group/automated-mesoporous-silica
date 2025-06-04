@@ -164,6 +164,25 @@ def _refill_syringe(syringe, stocks, refill_dwell):
 
 # for ammonia, water and TEOS
 def add_reactants_batch(jubilee, reactant_syringe, mix_syringe, sample_table, location_lookup, reactant_name, stocks, mix_after = None, dwell_time = 3, wait = False, refill_dwell = 0, n_rinse = 5, return_time = False):
+    """
+    Add reactants to a sample in a batch-wise manner. 
+
+    params:
+    -------
+    jubilee: Jubilee object
+    reactant_syringe: syringe object for the reactant
+    mix_syringe: syringe object for mixing after dispense
+    sample_table: pandas DataFrame containing the sample information
+    location_lookup: dictionary mapping sample UUIDs to well locations
+    reactant_name: string, name of the reactant column in the sample_table
+    stocks: Stocks object containing the available stocks
+    mix_after: tuple, (mix_volume, n_mix, wash stocks) where mix_volume is the volume to mix, n_mix is the number of times to mix, and wash stocks is a list of stocks to rinse the mix syringe in after mixing
+    dwell_time: float, time to wait after dispensing each sample
+    wait: bool, whether to wait for user input after each dispense
+    refill_dwell: float, time to wait after refilling the syringe
+    n_rinse: int, number of times to rinse the mix syringe in wash stocks
+    return_time: bool, whether to return the dispense time after the last dispense
+    """
     
     if mix_after is not None:
         assert isinstance(mix_after, tuple), 'mix after must be a tuple containing mix_volume, n_mix, wash stocks'

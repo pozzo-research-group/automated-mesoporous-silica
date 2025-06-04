@@ -96,7 +96,7 @@ def saxs_monitor(sample_uuid, usaxs_server_ip, afl_ip):
     username = 'test'
     password = 'domo_arigato'
 
-
+    # monitor SAXS instrument for measurement completion
     print(f'Waiting for sample {sample_uuid} to finish scan...') 
     while True:
         response = requests.post(usaxs_server_url, json={'id': str(sample_uuid)})
@@ -108,6 +108,8 @@ def saxs_monitor(sample_uuid, usaxs_server_ip, afl_ip):
             break
 
         time.sleep(10)
+
+    # Now that measurement is complete, can rinse cell out
     # call AFL rinse
     print(f'logging into afl with url {afl_url}')
     # login
