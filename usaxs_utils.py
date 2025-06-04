@@ -16,6 +16,9 @@ data_package_filename = 'packet.txt'
 
 
 def trigger_usaxs_measurement(sample_name, sample_uuid, sample_composition):
+    """
+    Triggers USAXS measurement via remote server by writing a file with a timestamp and sample info to ec2 instance, which will be monitored by the USAXS script.
+    """
 
     trigger_data = [datetime.datetime.now().strftime(date_format), sample_name, sample_composition, str(sample_uuid)]
     print('trigger data: ', trigger_data)
@@ -74,6 +77,7 @@ def watch_usaxs_measurement(sample_uuid, usaxs_server_ip, afl_ip):
 
     """
     Starts a monitoring thread to watch USAXS measurements for a given sample UUID.
+    After a measurement is complete, it triggers a rinse cell task on the AFL server.
 
     Args:
         sample_uuid (str): UUID of the sample being measured
@@ -88,6 +92,9 @@ def watch_usaxs_measurement(sample_uuid, usaxs_server_ip, afl_ip):
 
 
 def saxs_monitor(sample_uuid, usaxs_server_ip, afl_ip):
+    """
+    Monitor usaxs data server for completion of a measurement.
+    After measurement is complete, trigger a rinse cell task on the AFL server."""
 
 
     usaxs_server_url = 'http://' + usaxs_server_ip + ':5000/check_usaxs_status'
