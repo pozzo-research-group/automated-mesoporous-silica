@@ -83,5 +83,5 @@ This walkthrough assumes that you have:
 3. Install a new mix syringe and syringe tip. The rubber plunger in the syringe will swell after contact with TEOS, so needs to be replaced every few hours. After replacing the syringe, re-set the tool offsets (refresher in the [Jubilee documentation](https://science-jubilee.readthedocs.io/en/latest/getting_started/new_user_guide.html#setting-tool-parking-post-positions-and-offsets))
 4. Power up the Jubilee and AFL, and pressurize the NIST-AFL system.
 5. Home the Jubilee.
-6. The rest of this walk-through is described in the tutorial walk-through notebook. 
+6. The rest of this walk-through is described in the [tutorial walk-through notebook](TutorialWalkthrough.ipynb). 
 
