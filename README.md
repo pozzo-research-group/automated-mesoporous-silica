@@ -5,33 +5,39 @@ This repository is a companion to the paper, "Open-hardware automation platform 
 <img src="Tutorial/jubilee_usaxs.png">
 
 ## Repository contents
-
+```
 synthesis_experiment_files/
-├── fully_automated_execution/                     # Files for the fully automated execution of synthesis - characterization experiments
-│   ├── 2025_03_28_BaselineSampling.ipynb          # Fully automated experiments using NIST-AFL sample loader
-|   ├── Sobol_baseline_sample_generation.ipynb     # Constrained Sobol rejection sampling to select sample compositions
-│   ├── Mesoporous_SobolBaseline_APS_RestrictedAmmoniaTEOS_3_28_25.csv         # Sample compositions used for these experiments. 
-│   ├── 2025_03_28_BaselineSampling.log            # Log file generated from experiment
-│   ├── Mesoporous_constants_APS.json              # Constants for parameter space
-│   └── systemconfig.json                          # AFL and system config
-├── batch_synthesis/                               # Files for batch-mode experiment synthesis, results in paper are from these experiments.
-│   ├── 2025_03_29_BatchSynthesis.ipynb                # Notebook for executing batch-synthesized experiments
-│   ├── Sobol_baseline_sample_generation_batchmode.ipynb     # Constrained Sobol rejection sampling for batch mode experiments
-│   ├── Mesoporous_SobolBaseline_APS_BatchMode_3_29_25.csv   # Compositions of selected samples
-│   ├── Mesoporous_constants_APS_batch.json        # Constants for batch mode parameter space
-│   ├── APS_batchSynthesis_2025_03_29.log          # Log file from batch synthesis experiment
-│   └── systemconfig.json                          # AFL and system config
-Tutorial/                                          # Instructional walkthrough of how to reproduce synthesis shown here
-├── tutorial.md                                    # Step-by-step guide to reproducing the workflow
-└── TutorialWalkthrough.ipynb                      # Tutorial walk-through notebook
-usaxs_integration/                                 # Details on the automated USAXS instrument integration
-├── usaxs_integration.md                           # Details of USAXS integration used
-└──  beamline_control_script.py                    # Component of beamline integration
-sample_utilities/                                  # Utilities for sample selection and synthesis volume calculations
-└── samples.py
-stober_synthesis_utils.py                          # Utilities for reactant transfer and sample mixing
-usaxs_utils.py                                     # Utilities for USAXS instrument integration - client
+├── fully_automated_execution/                      # Fully automated synthesis–characterization experiments
+│   ├── 2025_03_28_BaselineSampling.ipynb           # Uses NIST-AFL sample loader
+│   ├── Sobol_baseline_sample_generation.ipynb      # Constrained Sobol sampling
+│   ├── Mesoporous_SobolBaseline_APS_*.csv          # Sample compositions
+│   ├── 2025_03_28_BaselineSampling.log             # Experiment log file
+│   ├── Mesoporous_constants_APS.json               # Parameter space constants
+│   └── systemconfig.json                           # AFL and system config
+│
+├── batch_synthesis/                                # Batch-mode synthesis (main paper experiments)
+│   ├── 2025_03_29_BatchSynthesis.ipynb
+│   ├── Sobol_baseline_sample_generation_batchmode.ipynb
+│   ├── Mesoporous_SobolBaseline_APS_BatchMode_*.csv
+│   ├── Mesoporous_constants_APS_batch.json
+│   ├── APS_batchSynthesis_2025_03_29.log
+│   └── systemconfig.json
+│
+├── tutorial/                                       # Instructional walkthrough
+│   ├── tutorial.md
+│   └── TutorialWalkthrough.ipynb
+│
+├── usaxs_integration/                              # Automated USAXS integration
+│   ├── usaxs_integration.md
+│   └── beamline_control_script.py
+│
+├── sample_utilities/                               # Sample selection + volume calculations
+│   └── samples.py
+│
+├── stober_synthesis_utils.py                       # Reactant transfer and mixing utilities
+└── usaxs_utils.py                                  # USAXS instrument client integration
 
+```
   ## Procedure tutorial
 
   For an explanatory walk-through of the steps needed to set up and execute the synthesis described in the paper, check out the [tutorial](Tutorial/tutorial.md)
