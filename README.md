@@ -4,18 +4,34 @@ This repository is a companion to the paper, "Open-hardware automation platform 
 
 ## Repository structure:
 
-- APS experiments:
-  |- automated execution: Fully automated experiments using the NIST-AFL sample loader. 
-    |- Jubilee/AFL execution notebook
-    |- sample composition table
-    |- usaxs_integration.md - writeup of the details of USAXS integration we used.
 
-  |- batch experiments: Batch synthesized experiments, measured using liquid cartridge plates in batch mode due to timing constraints.
-    |- Execution notebook
-    |- Constrained sobol rejection sampling notebook
-    |- Compositions of synthesized samples
-    |- 
+📁 APS-experiments/
+├── 📁 automated-execution/
+│   ├── 📓 Jubilee_AFL_execution.ipynb          # Fully automated experiments using NIST-AFL sample loader
+│   ├── 📄 sample_composition_table.csv
+│   └── 📄 usaxs_integration.md                 # Details of USAXS integration used
+│
+├── 📁 batch-experiments/
+│   ├── 📓 batch_execution.ipynb                # Notebook for executing batch-synthesized experiments
+│   ├── 📓 constrained_sobol_sampling.ipynb     # Constrained Sobol rejection sampling
+│   └── 📄 synthesized_sample_compositions.csv
+│
+📁 tutorial-walkthrough/
+├── 📄 walkthrough.md                           # Step-by-step guide to reproducing the workflow
+└── 📓 automated_synthesis.ipynb                # Clean example notebook using AFL sample changer
 
-- Tutorial walkthrough: 
-  | walkthrough.md - guide to re-producing the workflow described here
-  | automated_synthesis.ipynb - example notebook showing how to synthesize particles and use AFL sample changer. Cleaned up version of actual experiment execution code. 
+
+
+  ## Procedure tutorial
+
+  For an explanatory walk-through of the steps needed to set up and execute the synthesis described in the paper, check out the [tutorial](Tutorial/tutorial.md)
+
+  ## Instrument integration
+
+  More information on the APS 12-ID-E USAXS and Xenocs SAXS instrument integrations is available [here](usaxs_integration/usaxs_integration.md).
+
+  ## Additional hardware documentation
+
+  The science-jubilee platform, including the Digital Pipette syringe tools, is fully documented [here](https://science-jubilee.readthedocs.io/en/latest/)
+
+  The NIST-AFL sample changer implementation is documented [here](https://github.com/pozzo-research-group/AFL-sample-loader/tree/main).
