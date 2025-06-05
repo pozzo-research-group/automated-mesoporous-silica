@@ -55,6 +55,8 @@ This walkthrough assumes that you have:
 
 ### Prepare labware
 1. Pre-slit the septa. Using a sharp x-acto knife, slit each septa across the center, as shown. Leave the edges intact.
+
+<img src="septa_slit.png">
 2. Prepare sample vials: Prepare a well plate of 12 scintillation vials, capped with the slit septa and a septa threaded cap. The septa should be shiny side up. Place a retaining lid over the top of the vials, with the recessed lip facing down, and thread the assembly together through the top of the retaining lid into the heat set inserts in the well plate. 
 3. Prepare stock solution vials: Fill vials with the required solutions or reactants, and cap them as described above in (2). Label the vials. The rinse solutions are just the same anhydrous ethanol.
 
@@ -70,6 +72,8 @@ This walkthrough assumes that you have:
 | Post-TEOS rinse | 4 |
 
 4. Load the vials into the labware in the pattern shown below.
+
+<img src="samples_layout.png">
 
 5. Screw the lids on as was done for the sample vials. 
 
