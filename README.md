@@ -34,8 +34,15 @@ synthesis_experiment_files/
 ├── sample_utilities/                               # Sample selection + volume calculations
 │   └── samples.py
 │
+├── scattering_data
+│   ├── SAXS_reduced_data
+│   ├── usaxs_raw_data
+│   └── usaxs_reduced_data
+|
 ├── stober_synthesis_utils.py                       # Reactant transfer and mixing utilities
-└── usaxs_utils.py                                  # USAXS instrument client integration
+├── usaxs_utils.py                                  # USAXS instrument client integration
+└── sample_composition_information                  # Sample reference including composition and associated scattering filenames
+
 
 ```
   ## Procedure tutorial
@@ -45,6 +52,12 @@ synthesis_experiment_files/
   ## Instrument integration
 
   More information on the APS 12-ID-E USAXS and Xenocs SAXS instrument integrations is available [here](usaxs_integration/usaxs_integration.md).
+
+  ## Included scattering data
+  Collected scattering data for the batch parameter space exploration synthesis experiment are included in `scattering_data`
+  - SAXS_reduced_data contains data collected on a Xenocs Xeuss 3.0, with high resolution in the high-q region corresponding to scattering from the porous interior of particles. This data has been reduced as described in the manuscript.
+  - usaxs_raw_data contains non-reduced USAXS data in .h5 file format. The files are named in format {Cartridge plate well}_{scan number}_{Instrument incremental ID}.h5. Refer to the sample composition information file to determine which scattering data goes with which sample. 
+  - usaxs_reduced data contains the reduced usaxs data. The nonreduced usaxs data can be reduced using Igor Pro 8.04. The appropriate empty container background is `A2_1_2035.h5` for samples with instrument ID below 2081 and `A3_0_c2_2108.h5` for samples with instrument ID  of 2109 and above. 
 
   ## Additional hardware documentation
 
