@@ -15,7 +15,7 @@ This walkthrough assumes that you have:
 
 
 > ⚠️ **Hazards**  
-> TEOS is acutely toxic, TEOS and ethanol are flammable, and ammonium hydroxide is corrosive (and smells awful). Take steps to prevent exposure to vapors. The silicone septa used here do an effective job of limiting vapor generation, enough so that we are able to run this synthesis outside of a fume hood in a poorly ventilated instrument hutch without getting a whiff of anything. However, we thoroughly vetted our synthesis in a fume hood where spilled reactants would not have causes a safety problem first. 
+> TEOS is acutely toxic, TEOS and ethanol are flammable, and ammonium hydroxide is corrosive (and smells awful). Take steps to prevent exposure to vapors. The silicone septa used here do an effective job of limiting vapor generation, enough so that we are able to run this synthesis outside of a fume hood in a poorly ventilated instrument hutch without smelling anything. However, we thoroughly vetted our synthesis in a fume hood where spilled reactants would not have caused a safety problem first. 
 
 ## Required materials
 
