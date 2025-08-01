@@ -6,32 +6,33 @@ This repository is a companion to the paper, "Open-hardware automation platform 
 
 ## Repository contents
 ```
-synthesis_experiment_files/
-├── fully_automated_execution/                      # Fully automated synthesis–characterization experiments
-│   ├── 2025_03_28_BaselineSampling.ipynb           # Uses NIST-AFL sample loader
-│   ├── Sobol_baseline_sample_generation.ipynb      # Constrained Sobol sampling
-│   ├── Mesoporous_SobolBaseline_APS_*.csv          # Sample compositions
-│   ├── 2025_03_28_BaselineSampling.log             # Experiment log file
-│   ├── Mesoporous_constants_APS.json               # Parameter space constants
-│   └── systemconfig.json                           # AFL and system config
+automated-mesoporous-silica
+├── synthesis_experiment_files/
+|   ├── fully_automated_execution/                    # Fully automated synthesis–characterization experiments
+│   |    ├── 2025_03_28_BaselineSampling.ipynb        # Uses NIST-AFL sample loader
+│   |    ├── Sobol_baseline_sample_generation.ipynb   # Constrained Sobol sampling
+│   |    ├── Mesoporous_SobolBaseline_APS_*.csv       # Sample compositions
+│   |    ├── 2025_03_28_BaselineSampling.log          # Experiment log file
+│   |    ├── Mesoporous_constants_APS.json            # Parameter space constants
+│   |    └── systemconfig.json                        # AFL and system config
+|   |
+│   └── batch_synthesis/                              # Batch-mode synthesis (main paper experiments)
+│        ├── 2025_03_29_BatchSynthesis.ipynb
+│        ├── Sobol_baseline_sample_generation_batchmode.ipynb
+│        ├── Mesoporous_SobolBaseline_APS_BatchMode_*.csv
+│        ├── Mesoporous_constants_APS_batch.json
+│        ├── APS_batchSynthesis_2025_03_29.log
+│        └── systemconfig.json
 │
-├── batch_synthesis/                                # Batch-mode synthesis (main paper experiments)
-│   ├── 2025_03_29_BatchSynthesis.ipynb
-│   ├── Sobol_baseline_sample_generation_batchmode.ipynb
-│   ├── Mesoporous_SobolBaseline_APS_BatchMode_*.csv
-│   ├── Mesoporous_constants_APS_batch.json
-│   ├── APS_batchSynthesis_2025_03_29.log
-│   └── systemconfig.json
-│
-├── tutorial/                                       # Instructional walkthrough
+├── tutorial/                                         # Instructional walkthrough
 │   ├── tutorial.md
 │   └── TutorialWalkthrough.ipynb
 │
-├── usaxs_integration/                              # Automated USAXS integration
+├── usaxs_integration/                                # Automated USAXS integration
 │   ├── usaxs_integration.md
 │   └── beamline_control_script.py
 │
-├── sample_utilities/                               # Sample selection + volume calculations
+├── sample_utilities/                                 # Sample selection + volume calculations
 │   └── samples.py
 │
 ├── scattering_data
@@ -39,9 +40,9 @@ synthesis_experiment_files/
 │   ├── usaxs_raw_data
 │   └── usaxs_reduced_data
 |
-├── stober_synthesis_utils.py                       # Reactant transfer and mixing utilities
-├── usaxs_utils.py                                  # USAXS instrument client integration
-└── sample_composition_information                  # Sample reference including composition and associated scattering filenames
+├── stober_synthesis_utils.py                         # Reactant transfer and mixing utilities
+├── usaxs_utils.py                                    # USAXS instrument client integration
+└── sample_composition_information                    # Sample reference including composition and associated scattering filenames
 
 
 ```

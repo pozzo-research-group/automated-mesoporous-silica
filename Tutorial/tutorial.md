@@ -11,7 +11,7 @@ This walkthrough assumes that you have:
 - A built and functional implementation of our NIST-AFL sample changer implementation [documented here](https://github.com/pozzo-research-group/AFL-sample-loader), set up, tuned, and reliably loading samples into a flow cell that is mounted in your instrument.
 - Access to an X-ray scattering instrument, with the capability to remotely trigger measurements and be notified when they are completed. 
 - All equipment is set up and accessible over a local network (at least for your Jubilee, AFL, and digital syringe tools). 
-- This repository cloned onto a control computer running a reasonable version of python, with the [science-jubilee library](https://github.com/machineagency/science-jubilee) installed in your environment. 
+- This repository cloned onto a control computer with python 3.12 installed, with the [science-jubilee library](https://github.com/machineagency/science-jubilee) installed in your environment. 
 
 
 > ⚠️ **Hazards**  
