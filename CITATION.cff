@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "automated-mesoporous-silica"
+type: software
+authors:
+  - name: "Pozzo Research Group, University of Washington"
+repository-code: "https://github.com/pozzo-research-group/automated-mesoporous-silica"
+url: "https://pozzorg.com"
+preferred-citation:
+  type: article
+  title: "Accelerated sol–gel synthesis of nanoporous silica via integrated small angle X-ray scattering with an open-source automation platform"
+  authors:
+    - family-names: "Pelkie"
+      given-names: "Brenden"
+    - family-names: "Yung"
+      given-names: "Chi Yuet"
+    - family-names: "Wylie"
+      given-names: "Zachery R."
+    - family-names: "Pozzo"
+      given-names: "Lilo D."
+  journal: "Digital Discovery"
+  year: 2025
+  volume: "4"
+  issue: "10"
+  start: "3018"
+  end: "3030"
+  doi: "10.1039/d5dd00274e"
