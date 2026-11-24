@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16994906.svg)](https://doi.org/10.5281/zenodo.16994906)
 
-This repository is a companion to the paper, "Open-hardware automation platform for accelerated sol-gel nanomaterial synthesis". It contains the execution code used to run the automated synthesis experiments as well as a tutorial walk-through detailing how to reproduce the synthesis workflow.
+This repository is a companion to the paper, "[Accelerated sol–gel synthesis of nanoporous silica via integrated small angle X-ray scattering with an open-source automation platform](https://doi.org/10.1039/d5dd00274e)" (*Digital Discovery*, 2025, 4, 3018–3030). It contains the execution code used to run the automated synthesis experiments as well as a tutorial walk-through detailing how to reproduce the synthesis workflow.
 
 <img src="Tutorial/jubilee_usaxs.png">
 
